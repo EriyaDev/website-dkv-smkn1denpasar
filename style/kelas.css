@@ -103,8 +103,7 @@ header.navbar-container {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  position: relative;
-  background: url("Shockwave_20-_2015.jpeg");
+  background: url("hitam.jpg");
   background-size: cover;
 }
 
@@ -226,7 +225,7 @@ header.navbar-container {
 }
 
 #tableContainer {
-  margin-top: 1rem;
+  margin-top: 3rem;
   width: 70%;
   height: 80vh;
   display: flex;
@@ -333,6 +332,11 @@ header.navbar-container {
 
 .data-table tr:hover {
   background-color: rgba(76, 76, 76, 0.1);
+}
+
+.nama-kelas-head {
+  display: flex;
+  transform: translateY(-330px);
 }
 
 @keyframes fade {

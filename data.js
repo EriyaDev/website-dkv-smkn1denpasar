@@ -1,4 +1,5 @@
 const tableContainer = document.getElementById("tableContainer");
+const namaKelas = document.querySelector(".nama-kelas-head");
 
 function createTable(data) {
   // Create table element
@@ -48,6 +49,8 @@ async function loadAndDisplayData(filename) {
     // Create and display the new table
     const table = createTable(data);
     tableContainer.appendChild(table);
+    namaKelas.innerHTML = filename;
+
   } catch (error) {
     console.error("Error loading data:", error);
   }
