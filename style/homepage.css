@@ -6,8 +6,8 @@
 }
 
 :root {
-  --putih:#ffffff;
-  --agak-hitam:#121212;
+  --putih:#121212;
+  --agak-hitam:#ffffff;
   --agak-hitam-transparan: #1212128f;
   --merah:#ff0000;
   --orange:#ffa500;
@@ -37,7 +37,7 @@ header.navbar-container{
   border-radius: 12px;
   border: 1px solid rgba(255, 255, 255, 0.125);
 
-  background-color: var(--agak-hitam-transparan);
+  background-color: var(--agak-hitam);
 }
 
 .navbar-container .logo {
@@ -110,7 +110,7 @@ header.navbar-container{
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  color: var(--putih);
+  color: var(--agak-hitam);
 }
 
 .isi-image .btn{
@@ -120,7 +120,7 @@ header.navbar-container{
   font-size: 19px;
   font-weight: 500;
   background-color: var(--orange);
-  color: var(--putih);
+  color: var(--agak-hitam);
   font-weight: bold;
   margin-top: 25px;
 
@@ -128,7 +128,7 @@ header.navbar-container{
 }
 
 .isi-image .btn:hover {
-  border: 1px solid var(--putih);
+  border: 1px solid var(--agak-hitam);
   background-color: transparent;
   backdrop-filter: blur(15px);
 }
@@ -339,7 +339,7 @@ span {
 
 .kiri2 i {
   font-size: 30px;
-  color: var(--agak-hitam);
+  color: var(--putih);
 }
 
 .kiri2 h3 {
@@ -381,7 +381,7 @@ footer {
 
 .text-logo p {
   font-size: 18px;
-  color: var(--putih);
+  color: var(--agak-hitam);
   font-weight: bolder;
 }
 
@@ -394,7 +394,7 @@ footer {
 }
 
 .sosial-media a {
-  color: var(--putih);
+  color: var(--agak-hitam);
   text-decoration: none;
 }
 
@@ -406,7 +406,7 @@ footer {
 .bawah-footer {
   width: 70%;
   height: 1px;
-  background-color: var(--putih);
+  background-color: var(--agak-hitam);
 }
 
 .bawah-footer2 {

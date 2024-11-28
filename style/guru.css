@@ -280,8 +280,8 @@ button:active {
 
 .modal {
   margin-top: 1rem;
-  width: 70%;
-  height: 90vh;
+  max-width: 70%;
+  max-height: 70vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -298,6 +298,7 @@ button:active {
   border: 1px solid rgba(235, 235, 235, 0.3);
 
   animation: fade 0.5s linear;
+  transform: translate(200px, 100px);
 }
 
 .modal i {
@@ -353,6 +354,44 @@ button:active {
 .nama-guru-head {
   display: flex;
   transform: translateY(-200px);
+}
+
+.table-modal-container {
+  display: flex;
+  align-items: center;
+}
+
+.member-image-container {
+  width: 200px;
+  margin-right: 2rem;
+}
+
+.member-image-container img {
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+}
+
+.data-table {
+  width: 100%;
+  margin: auto 0;
+  font-family: "Poppins", sans-serif;
+  border-spacing: 0;
+  animation: fade 1s linear;
+}
+
+.data-table th,
+.data-table td {
+  padding: 1rem;
+  text-align: left;
+}
+
+.lihat-detail-btn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 0.5rem 1rem;
+  border: none;
+  cursor: pointer;
 }
 
 @keyframes fade {

@@ -6,8 +6,8 @@
 }
 
 :root {
-  --putih:#ffffff;
-  --agak-hitam:#121212;
+  --putih:#121212;
+  --agak-hitam:#ffffff;
   --merah:#ff0000;
   --orange:#ffa500;
   --agak-putih:#efefef;
@@ -113,7 +113,7 @@ header.navbar-container{
   font-size: 19px;
   font-weight: 500;
   background-color: var(--orange);
-  color: var(--putih);
+  color: var(--agak-hitam);
   font-weight: bold;
   margin-top: 25px;
 
@@ -121,7 +121,7 @@ header.navbar-container{
 }
 
 .isi-image .btn:hover {
-  border: 1px solid var(--putih);
+  border: 1px solid var(--agak-hitam);
   background-color: transparent;
   backdrop-filter: blur(15px);
 }
@@ -131,15 +131,18 @@ header.navbar-container{
 }
 
 .isi-image h3 {
+  color: var(--agak-hitam);
   font-size: 32px
 }
 
 .isi-image h1 {
   font-size: 64px;
+  color: var(--agak-hitam);
 }
 
 .isi-image p {
   font-size: 17px;
+  color: var(--agak-hitam);
 }
 
 .berita {
@@ -320,7 +323,7 @@ span {
 
 .kiri2 i {
   font-size: 30px;
-  color: var(--agak-hitam);
+  color: var(--putih);
 }
 
 .kiri2 h3 {
@@ -362,7 +365,7 @@ footer {
 
 .text-logo p {
   font-size: 18px;
-  color: var(--putih);
+  color: var(--agak-hitam);
   font-weight: bolder;
 }
 
@@ -375,7 +378,7 @@ footer {
 }
 
 .sosial-media a {
-  color: var(--putih);
+  color: var(--agak-hitam);
   text-decoration: none;
 }
 
@@ -387,7 +390,7 @@ footer {
 .bawah-footer {
   width: 70%;
   height: 1px;
-  background-color: var(--putih);
+  background-color: var(--agak-hitam);
 }
 
 .bawah-footer2 {
@@ -395,7 +398,7 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: var(--putih);
+  color: var(--agak-hitam);
 }
 
 .btn-login-register button{
@@ -403,7 +406,7 @@ footer {
   border-radius: 5px;
   border: none;
   background-color: #ff9b05;
-  color: white;
+  color: var(--agak-hitam);
   font-weight: bold;
   cursor: pointer;
   font-size: 1rem;
