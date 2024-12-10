@@ -1,69 +1,52 @@
-const tableContainer = document.getElementById("tableContainer");
-const namaGuru = document.querySelector(".nama-guru-head");
+let btnPakWika = document.getElementById('wika');
+let modal1 = document.getElementById('modal1');
 
-function createTable(data) {
-  // Create table element
-  const table = document.createElement("table");
-  table.className = "data-table";
+let btnPakDeny = document.getElementById('pakDeny');
+let modal2 = document.getElementById('modal2');
 
-  // Create table body
-  const tbody = document.createElement("tbody");
-  data.forEach((rowData) => {
-    const row = document.createElement("tr");
+let btnPakSudi = document.getElementById('pakSudi');
+let modal3 = document.getElementById('modal3');
 
-    // Create header cells
-    const headerCell = document.createElement("th");
-    headerCell.scope = "row";
-    headerCell.textContent = Object.keys(rowData)[0];
-    row.appendChild(headerCell);
+let btnBuSuzy = document.getElementById('buSuzy');
+let modal4 = document.getElementById('modal4');
 
-    // Create data cells
-    const dataCell = document.createElement("td");
-    dataCell.textContent = Object.values(rowData)[0];
-    row.appendChild(dataCell);
+let btnPakSaka = document.getElementById('pakSaka');
+let modal5 = document.getElementById('modal5');
 
-    tbody.appendChild(row);
-  });
+let btnBuGaluh = document.getElementById('buGaluh');
+let modal6 = document.getElementById('modal6');
 
-  table.appendChild(tbody);
-  return table;
-}
-
-async function loadAndDisplayData(filename) {
-  try {
-    // Fetch the JSON file based on the provided filename
-    const response = await fetch(`./${filename}.json`);
-    const data = await response.json();
-
-    // Clear any existing table
-    tableContainer.innerHTML = "";
-
-    // Create and display the new table
-    const table = createTable(data);
-    tableContainer.appendChild(table);
-    namaGuru.innerHTML = data[0].Nama;
-  } catch (error) {
-    console.error("Error loading data:", error);
-  }
-}
-
-tableContainer.style.display = "none";
-const modal = document.querySelector(".modal");
-modal.style.display = "none";
-
-const close = document.querySelector(".close");
-close.addEventListener("click", () => {
-  tableContainer.style.display = "none";
-  modal.style.display = "none";
+// Fungsi untuk menampilkan modal
+btnPakWika.addEventListener('click', () => {
+  modal1.style.display = "block";
 });
 
-// Attach click event listeners to the buttons
-document.querySelectorAll(".guru-btn").forEach((button) => {
-  button.addEventListener("click", () => {
-    const filename = button.id;
-    tableContainer.style.display = "flex";
-    modal.style.display = "flex";
-    console.log(filename);
-    loadAndDisplayData(filename);
-  });
+btnPakDeny.addEventListener('click', () => {
+  modal2.style.display = "block";
 });
+
+btnPakSudi.addEventListener('click', () => {
+  modal3.style.display = "block";
+});
+
+btnBuSuzy.addEventListener('click', () => {
+  modal4.style.display = "block";
+});
+
+btnPakSaka.addEventListener('click', () => {
+  modal5.style.display = "block";
+});
+
+btnBuGaluh.addEventListener('click', () => {
+  modal6.style.display = "block";
+});
+
+// Fungsi untuk menutup modal
+function closeModal() {
+  modal1.style.display = "none";
+  modal2.style.display = "none";
+  modal3.style.display = "none";
+  modal4.style.display = "none";
+  modal5.style.display = "none";
+  modal6.style.display = "none";
+}
